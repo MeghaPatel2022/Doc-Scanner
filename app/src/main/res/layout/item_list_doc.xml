@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@drawable/box_grey_ract"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp">
+
+        <ImageView
+            android:id="@+id/img_doc"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/sample_data"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_toRightOf="@+id/img_doc">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Untitled"
+                android:singleLine="true"
+                android:textSize="@dimen/_13sdp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10-08-2020"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textSize="@dimen/_10sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2.0"
+            android:layout_below="@+id/ll_top"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_toRightOf="@+id/img_doc">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_weight="1.0"
+                android:layout_gravity="bottom|left"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:visibility="gone"
+                android:src="@drawable/down"/>
+
+            <ImageView
+                android:id="@+id/img_share"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_17sdp"
+                android:layout_weight="1.0"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:src="@drawable/share"/>
+
+            <ImageView
+                android:id="@+id/img_more"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_weight="1.0"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/_13sdp"
+                android:src="@drawable/more"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

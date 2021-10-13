@@ -1,0 +1,52 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.esafirm.imagepicker" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="14"
+6-->D:\Megha\Android Projects\DocPdfScanner\imagepicker\src\main\AndroidManifest.xml
+7        android:targetSdkVersion="30" />
+7-->D:\Megha\Android Projects\DocPdfScanner\imagepicker\src\main\AndroidManifest.xml
+8
+9    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+9-->D:\Megha\Android Projects\DocPdfScanner\imagepicker\src\main\AndroidManifest.xml:5:5-80
+9-->D:\Megha\Android Projects\DocPdfScanner\imagepicker\src\main\AndroidManifest.xml:5:22-77
+10    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+10-->D:\Megha\Android Projects\DocPdfScanner\imagepicker\src\main\AndroidManifest.xml:6:5-81
+10-->D:\Megha\Android Projects\DocPdfScanner\imagepicker\src\main\AndroidManifest.xml:6:22-78
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->D:\Megha\Android Projects\DocPdfScanner\imagepicker\src\main\AndroidManifest.xml:7:5-65
+11-->D:\Megha\Android Projects\DocPdfScanner\imagepicker\src\main\AndroidManifest.xml:7:22-62
+12
+13    <application android:requestLegacyExternalStorage="true" >
+13-->D:\Megha\Android Projects\DocPdfScanner\imagepicker\src\main\AndroidManifest.xml:9:5-26:19
+13-->D:\Megha\Android Projects\DocPdfScanner\imagepicker\src\main\AndroidManifest.xml:10:9-52
+14        <activity
+14-->D:\Megha\Android Projects\DocPdfScanner\imagepicker\src\main\AndroidManifest.xml:11:9-14:50
+15            android:name="com.esafirm.imagepicker.features.ImagePickerActivity"
+15-->D:\Megha\Android Projects\DocPdfScanner\imagepicker\src\main\AndroidManifest.xml:12:13-80
+16            android:configChanges="orientation|screenSize"
+16-->D:\Megha\Android Projects\DocPdfScanner\imagepicker\src\main\AndroidManifest.xml:13:13-59
+17            android:theme="@style/ef_AppTheme" />
+17-->D:\Megha\Android Projects\DocPdfScanner\imagepicker\src\main\AndroidManifest.xml:14:13-47
+18
+19        <provider
+19-->D:\Megha\Android Projects\DocPdfScanner\imagepicker\src\main\AndroidManifest.xml:16:9-24:20
+20            android:name="com.esafirm.imagepicker.helper.ImagePickerFileProvider"
+20-->D:\Megha\Android Projects\DocPdfScanner\imagepicker\src\main\AndroidManifest.xml:17:13-59
+21            android:authorities="${applicationId}.imagepicker.provider"
+21-->D:\Megha\Android Projects\DocPdfScanner\imagepicker\src\main\AndroidManifest.xml:18:13-72
+22            android:exported="false"
+22-->D:\Megha\Android Projects\DocPdfScanner\imagepicker\src\main\AndroidManifest.xml:19:13-37
+23            android:grantUriPermissions="true" >
+23-->D:\Megha\Android Projects\DocPdfScanner\imagepicker\src\main\AndroidManifest.xml:20:13-47
+24            <meta-data
+24-->D:\Megha\Android Projects\DocPdfScanner\imagepicker\src\main\AndroidManifest.xml:21:13-23:71
+25                android:name="android.support.FILE_PROVIDER_PATHS"
+25-->D:\Megha\Android Projects\DocPdfScanner\imagepicker\src\main\AndroidManifest.xml:22:17-67
+26                android:resource="@xml/image_picker_provider_paths" />
+26-->D:\Megha\Android Projects\DocPdfScanner\imagepicker\src\main\AndroidManifest.xml:23:17-68
+27        </provider>
+28    </application>
+29
+30</manifest>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome To "
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_25sdp"/>
+
+    <TextView
+        android:id="@+id/tv_welcome1"
+        android:layout_below="@+id/tv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Doc Scan"
+        android:textAllCaps="true"
+        android:textColor="@color/blue"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/_20sdp" />
+
+    <ImageView
+        android:layout_below="@id/tv_welcome1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/welcome_back"/>
+
+    <ImageView
+        android:id="@+id/img_welcome"
+        android:layout_below="@id/tv_welcome1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:src="@drawable/ic_welcome_1"/>
+
+    <LinearLayout
+        android:id="@+id/ll_dots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_150sdp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_brightness_1_24"
+            app:tint="@color/blue" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:src="@drawable/ic_baseline_brightness_1_24"
+            app:tint="@color/light_grey" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:src="@drawable/ic_baseline_brightness_1_24"
+            app:tint="@color/light_grey" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

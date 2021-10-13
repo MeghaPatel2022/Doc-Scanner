@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "42941516168",
+    "project_id": "camscanner-65ff3",
+    "storage_bucket": "camscanner-65ff3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42941516168:android:f495c7feb911ffe99a923d",
+        "android_client_info": {
+          "package_name": "com.codedevs.camscanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42941516168-r51im3n2318pdh20nroiiq90r2h0dejh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJtyUy8TyGaTgTWP7xSp0aR2kjl0jYyEE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "42941516168-r51im3n2318pdh20nroiiq90r2h0dejh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

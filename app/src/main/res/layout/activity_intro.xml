@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Welcome.IntroActivity">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_above="@+id/tv_skip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@drawable/blue_ract"
+        android:backgroundTint="@color/blue"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:text="Get Started"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_skip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:visibility="gone"
+        android:weightSum="2.0">
+
+        <Button
+            android:id="@+id/btn_skip"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/blue_ract"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:text="Skip"
+            android:textAllCaps="false"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btn_next1"
+            android:layout_width="0dp"
+            android:layout_weight="1.0"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/blue_ract"
+            android:backgroundTint="@color/blue"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next2"
+        android:layout_width="match_parent"
+        android:layout_weight="1.0"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@drawable/blue_ract"
+        android:backgroundTint="@color/blue"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:text="Next"
+        android:visibility="gone"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+
+
+</RelativeLayout>

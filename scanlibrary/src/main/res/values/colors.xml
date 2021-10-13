@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="orange">#ffff900d</color>
+    <color name="bottom_background_color">#ffc4c2bc</color>
+
+    <color name="polygonViewCircleStrokeColor">#ff59a9ff</color>
+    <color name="polygonViewCircleBackground">#90e5f8ff</color>
+    <color name="colorPrimary">#2F80ED</color>
+    <color name="colorPrimaryDark">#000B2B</color>
+    <color name="colorAccent">#2F80ED</color>
+
+    <color name="splash_color">#000B2B</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#333333</color>
+    <color name="blue">#2F80ED</color>
+    <color name="light_grey">#C3C3C3</color>
+</resources>

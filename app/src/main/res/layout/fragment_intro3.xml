@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Welcome.Intro3Activity">
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan your documents"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_25sdp"/>
+
+    <RelativeLayout
+        android:id="@+id/tv_welcome1"
+        android:layout_below="@id/tv_welcome"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_with"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="With"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="@dimen/_15sdp" />
+
+        <TextView
+            android:layout_toRightOf="@+id/tv_with"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doc Scan"
+            android:textColor="@color/blue"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/_15sdp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_welcome3"
+        android:layout_below="@+id/tv_welcome1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create and save the document"
+        android:textColor="@color/light_grey"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/_9sdp" />
+
+
+    <ImageView
+        android:layout_below="@id/tv_welcome1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:src="@drawable/welcome_back" />
+
+    <ImageView
+        android:id="@+id/img_welcome"
+        android:layout_below="@id/tv_welcome1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_45sdp"
+        android:src="@drawable/ic_welcome_1"/>
+
+    <LinearLayout
+        android:id="@+id/ll_dots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/_150sdp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_brightness_1_24"
+            app:tint="@color/light_grey" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:src="@drawable/ic_baseline_brightness_1_24"
+            app:tint="@color/light_grey" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:src="@drawable/ic_baseline_brightness_1_24"
+            app:tint="@color/blue" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
